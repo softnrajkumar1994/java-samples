@@ -36,7 +36,6 @@ public class MyCustomMap<K, V> {
         buckets[index] = newEntry;
         size++;
 
-        // Check load factor
         if ((1.0 * size) / buckets.length >= load_factor) {
             resize();
         }
